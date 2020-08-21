@@ -1,0 +1,15 @@
+Test of VCL on ../testbench/testbench1.cpp with test1.txt 
+
+2020-07-29:10:23:41
+
+
+
+* Testcase 1
+
+** Vector type Vec16c
+
+*** Instruction set 6
+
+   test case 1 , vector Vec16c, instruction set 6, ../testbench/testbench1.cpp
+
+*** Compiling failed\n

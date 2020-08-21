@@ -1,0 +1,644 @@
+Operating system is Unknown
+
+
+max instruction set: 6
+
+g++ -Dtestcase=1  -Dvtype=Vec16c -Drtype=Vec16c -DINSTRSET=2 -Dseed=1 -march=armv8-a+fp+simd+crypto+crc -std=c++17 -O3 -fno-trapping-math -ox -I../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/ ../testbench/testbench1.cpp  -fno-asynchronous-unwind-tables -Wno-attributes 
+In file included from ../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorclass.h:41,
+                 from ../testbench/testbench1.cpp:142:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectori128.h: In member function ‘Vec16c& Vec16c::cutoff(int)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectori128.h:395:44: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+  395 |             0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+      |                                            ^
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectori128.h:395:44: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectori128.h:395:44: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectori128.h:395:44: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectori128.h:395:44: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectori128.h:395:44: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectori128.h:395:44: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectori128.h:395:44: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectori128.h:395:44: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectori128.h:395:44: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectori128.h:395:44: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectori128.h:395:44: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectori128.h:395:44: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectori128.h:395:44: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectori128.h:395:44: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectori128.h:395:44: error: narrowing conversion of ‘-1’ from ‘int’ to ‘char’ [-Wnarrowing]
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectori128.h: In function ‘Vec16c add_saturated(const Vec16c&, const Vec16c&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectori128.h:805:12: error: ‘_mm_adds_epi8’ was not declared in this scope; did you mean ‘_mm_adds_epu8’?
+  805 |     return _mm_adds_epi8(a, b);
+      |            ^~~~~~~~~~~~~
+      |            _mm_adds_epu8
+In file included from ../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorclass.h:41,
+                 from ../testbench/testbench1.cpp:142:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectori128.h: In function ‘Vec8us operator/(const Vec8us&, const Divisor_us&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectori128.h:5793:19: error: ‘_mm_mulhi_epu16’ was not declared in this scope; did you mean ‘_mm_mulhi_epi16’?
+ 5793 |     __m128i t1  = _mm_mulhi_epu16(a, d.getm());            // multiply high unsigned words
+      |                   ^~~~~~~~~~~~~~~
+      |                   _mm_mulhi_epi16
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectori128.h: In function ‘Vec8us divide_by_ui(const Vec8us&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectori128.h:6061:18: error: there are no arguments to ‘_mm_mulhi_epu16’ that depend on a template parameter, so a declaration of ‘_mm_mulhi_epu16’ must be available [-fpermissive]
+ 6061 |     __m128i xm = _mm_mulhi_epu16(x1, multv);                         // high part of 16x16->32 bit unsigned multiplication
+      |                  ^~~~~~~~~~~~~~~
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectori128.h:6061:18: note: (if you use ‘-fpermissive’, G++ will accept your code, but allowing the use of an undeclared name is deprecated)
+In file included from ../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorclass.h:42,
+                 from ../testbench/testbench1.cpp:142:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘__m128d selectd(const __m128d&, const __m128d&, const __m128d&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:84:9: error: ‘_mm_and_pd’ was not declared in this scope; did you mean ‘_mm_and_ps’?
+   84 |         _mm_and_pd(s,a),
+      |         ^~~~~~~~~~
+      |         _mm_and_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:85:9: error: ‘_mm_andnot_pd’ was not declared in this scope; did you mean ‘_mm_andnot_ps’?
+   85 |         _mm_andnot_pd(s,b));
+      |         ^~~~~~~~~~~~~
+      |         _mm_andnot_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:83:12: error: ‘_mm_or_pd’ was not declared in this scope; did you mean ‘_mm_or_ps’?
+   83 |     return _mm_or_pd(
+      |            ^~~~~~~~~
+      |            _mm_or_ps
+In file included from ../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorclass.h:42,
+                 from ../testbench/testbench1.cpp:142:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In constructor ‘Vec2db::Vec2db(bool, bool)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:293:15: error: ‘_mm_castsi128_pd’ was not declared in this scope; did you mean ‘_mm_castsi128_ps’?
+  293 |         xmm = _mm_castsi128_pd(_mm_setr_epi32(-(int)b0, -(int)b0, -(int)b1, -(int)b1));
+      |               ^~~~~~~~~~~~~~~~
+      |               _mm_castsi128_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In constructor ‘Vec2db::Vec2db(bool)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:306:15: error: ‘_mm_castsi128_pd’ was not declared in this scope; did you mean ‘_mm_castsi128_ps’?
+  306 |         xmm = _mm_castsi128_pd(_mm_set1_epi32(-int32_t(b)));
+      |               ^~~~~~~~~~~~~~~~
+      |               _mm_castsi128_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In constructor ‘Vec2db::Vec2db(const Vec2qb&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:319:15: error: ‘_mm_castsi128_pd’ was not declared in this scope; did you mean ‘_mm_castsi128_ps’?
+  319 |         xmm = _mm_castsi128_pd(x);
+      |               ^~~~~~~~~~~~~~~~
+      |               _mm_castsi128_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In member function ‘Vec2db& Vec2db::operator=(const Vec2qb&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:323:15: error: ‘_mm_castsi128_pd’ was not declared in this scope; did you mean ‘_mm_castsi128_ps’?
+  323 |         xmm = _mm_castsi128_pd(x);
+      |               ^~~~~~~~~~~~~~~~
+      |               _mm_castsi128_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In member function ‘Vec2db::operator Vec2qb() const’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:333:16: error: ‘_mm_castpd_si128’ was not declared in this scope; did you mean ‘_mm_castps_si128’?
+  333 |         return _mm_castpd_si128(xmm);
+      |                ^~~~~~~~~~~~~~~~
+      |                _mm_castps_si128
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In member function ‘const Vec2db& Vec2db::insert(uint32_t, bool)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:342:33: error: ‘_mm_castps_pd’ was not declared in this scope; did you mean ‘_mm_castps_si128’?
+  342 |             xmm = _mm_or_pd(xmm,_mm_castps_pd(mask));
+      |                                 ^~~~~~~~~~~~~
+      |                                 _mm_castps_si128
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:342:19: error: ‘_mm_or_pd’ was not declared in this scope; did you mean ‘_mm_or_ps’?
+  342 |             xmm = _mm_or_pd(xmm,_mm_castps_pd(mask));
+      |                   ^~~~~~~~~
+      |                   _mm_or_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:345:33: error: ‘_mm_castps_pd’ was not declared in this scope; did you mean ‘_mm_castps_si128’?
+  345 |             xmm = _mm_andnot_pd(_mm_castps_pd(mask),xmm);
+      |                                 ^~~~~~~~~~~~~
+      |                                 _mm_castps_si128
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:345:19: error: ‘_mm_andnot_pd’ was not declared in this scope; did you mean ‘_mm_andnot_ps’?
+  345 |             xmm = _mm_andnot_pd(_mm_castps_pd(mask),xmm);
+      |                   ^~~~~~~~~~~~~
+      |                   _mm_andnot_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2db operator&(const Vec2db&, const Vec2db&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:371:12: error: ‘_mm_and_pd’ was not declared in this scope; did you mean ‘_mm_and_ps’?
+  371 |     return _mm_and_pd(a, b);
+      |            ^~~~~~~~~~
+      |            _mm_and_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2db operator|(const Vec2db&, const Vec2db&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:385:12: error: ‘_mm_or_pd’ was not declared in this scope; did you mean ‘_mm_or_ps’?
+  385 |     return _mm_or_pd(a, b);
+      |            ^~~~~~~~~
+      |            _mm_or_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2db operator^(const Vec2db&, const Vec2db&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:399:12: error: ‘_mm_xor_pd’ was not declared in this scope; did you mean ‘_mm_xor_ps’?
+  399 |     return _mm_xor_pd(a, b);
+      |            ^~~~~~~~~~
+      |            _mm_xor_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2db operator~(const Vec2db&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:410:26: error: ‘_mm_castsi128_pd’ was not declared in this scope; did you mean ‘_mm_castsi128_ps’?
+  410 |     return _mm_xor_pd(a, _mm_castsi128_pd(_mm_set1_epi32(-1)));
+      |                          ^~~~~~~~~~~~~~~~
+      |                          _mm_castsi128_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:410:12: error: ‘_mm_xor_pd’ was not declared in this scope; did you mean ‘_mm_xor_ps’?
+  410 |     return _mm_xor_pd(a, _mm_castsi128_pd(_mm_set1_epi32(-1)));
+      |            ^~~~~~~~~~
+      |            _mm_xor_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2db andnot(const Vec2db&, const Vec2db&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:424:12: error: ‘_mm_andnot_pd’ was not declared in this scope; did you mean ‘_mm_andnot_ps’?
+  424 |     return _mm_andnot_pd(b, a);
+      |            ^~~~~~~~~~~~~
+      |            _mm_andnot_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘bool horizontal_and(const Vec2db&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:436:12: error: ‘_mm_movemask_pd’ was not declared in this scope; did you mean ‘_mm_movemask_ps’?
+  436 |     return _mm_movemask_pd(a) == 3;
+      |            ^~~~~~~~~~~~~~~
+      |            _mm_movemask_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘bool horizontal_or(const Vec2db&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:442:12: error: ‘_mm_movemask_pd’ was not declared in this scope; did you mean ‘_mm_movemask_ps’?
+  442 |     return _mm_movemask_pd(a) != 0;
+      |            ^~~~~~~~~~~~~~~
+      |            _mm_movemask_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In member function ‘Vec4f& Vec4f::load_partial(int, const float*)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:515:19: error: ‘_mm_castpd_ps’ was not declared in this scope; did you mean ‘_mm_cmpord_ps’?
+  515 |             xmm = _mm_castpd_ps(_mm_load_sd((double const*)p)); break;
+      |                   ^~~~~~~~~~~~~
+      |                   _mm_cmpord_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In member function ‘void Vec4f::store_partial(int, float*) const’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:534:38: error: ‘_mm_castps_pd’ was not declared in this scope; did you mean ‘_mm_castps_si128’?
+  534 |             _mm_store_sd((double*)p, _mm_castps_pd(xmm)); break;
+      |                                      ^~~~~~~~~~~~~
+      |                                      _mm_castps_si128
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:534:13: error: ‘_mm_store_sd’ was not declared in this scope; did you mean ‘_mm_store_ss’?
+  534 |             _mm_store_sd((double*)p, _mm_castps_pd(xmm)); break;
+      |             ^~~~~~~~~~~~
+      |             _mm_store_ss
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec4f truncate(const Vec4f&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:986:19: error: ‘_mm_getcsr’ was not declared in this scope; did you mean ‘_mm_set_ss’?
+  986 |     uint32_t t1 = _mm_getcsr();        // MXCSR
+      |                   ^~~~~~~~~~
+      |                   _mm_set_ss
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:988:5: error: ‘_mm_setcsr’ was not declared in this scope; did you mean ‘_mm_set_ss’?
+  988 |     _mm_setcsr(t2);                    // change MXCSR
+      |     ^~~~~~~~~~
+      |     _mm_set_ss
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec4f floor(const Vec4f&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1000:19: error: ‘_mm_getcsr’ was not declared in this scope; did you mean ‘_mm_set_ss’?
+ 1000 |     uint32_t t1 = _mm_getcsr();        // MXCSR
+      |                   ^~~~~~~~~~
+      |                   _mm_set_ss
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1002:5: error: ‘_mm_setcsr’ was not declared in this scope; did you mean ‘_mm_set_ss’?
+ 1002 |     _mm_setcsr(t2);                    // change MXCSR
+      |     ^~~~~~~~~~
+      |     _mm_set_ss
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec4f ceil(const Vec4f&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1014:19: error: ‘_mm_getcsr’ was not declared in this scope; did you mean ‘_mm_set_ss’?
+ 1014 |     uint32_t t1 = _mm_getcsr();        // MXCSR
+      |                   ^~~~~~~~~~
+      |                   _mm_set_ss
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1016:5: error: ‘_mm_setcsr’ was not declared in this scope; did you mean ‘_mm_set_ss’?
+ 1016 |     _mm_setcsr(t2);                    // change MXCSR
+      |     ^~~~~~~~~~
+      |     _mm_set_ss
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘uint32_t get_control_word()’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1207:12: error: ‘_mm_getcsr’ was not declared in this scope; did you mean ‘_mm_set_ss’?
+ 1207 |     return _mm_getcsr();
+      |            ^~~~~~~~~~
+      |            _mm_set_ss
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘void set_control_word(uint32_t)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1213:5: error: ‘_mm_setcsr’ was not declared in this scope; did you mean ‘_mm_set_ss’?
+ 1213 |     _mm_setcsr(w);
+      |     ^~~~~~~~~~
+      |     _mm_set_ss
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In constructor ‘Vec2d::Vec2d(double)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1516:15: error: ‘_mm_set1_pd’ was not declared in this scope; did you mean ‘_mm_set1_ps’?
+ 1516 |         xmm = _mm_set1_pd(d);
+      |               ^~~~~~~~~~~
+      |               _mm_set1_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In constructor ‘Vec2d::Vec2d(double, double)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1520:15: error: ‘_mm_setr_pd’ was not declared in this scope; did you mean ‘_mm_setr_ps’?
+ 1520 |         xmm = _mm_setr_pd(d0, d1);
+      |               ^~~~~~~~~~~
+      |               _mm_setr_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In member function ‘Vec2d& Vec2d::load(const double*)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1537:15: error: ‘_mm_loadu_pd’ was not declared in this scope; did you mean ‘_mm_loadu_ps’?
+ 1537 |         xmm = _mm_loadu_pd(p);
+      |               ^~~~~~~~~~~~
+      |               _mm_loadu_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In member function ‘const Vec2d& Vec2d::load_a(const double*)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1546:15: error: ‘_mm_load_pd’ was not declared in this scope; did you mean ‘_mm_load_sd’?
+ 1546 |         xmm = _mm_load_pd(p);
+      |               ^~~~~~~~~~~
+      |               _mm_load_sd
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In member function ‘void Vec2d::store(double*) const’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1551:9: error: ‘_mm_storeu_pd’ was not declared in this scope; did you mean ‘_mm_storeu_ps’?
+ 1551 |         _mm_storeu_pd(p, xmm);
+      |         ^~~~~~~~~~~~~
+      |         _mm_storeu_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In member function ‘void Vec2d::store_a(double*) const’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1559:9: error: ‘_mm_store_pd’ was not declared in this scope; did you mean ‘_mm_store_ps’?
+ 1559 |         _mm_store_pd(p, xmm);
+      |         ^~~~~~~~~~~~
+      |         _mm_store_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In member function ‘Vec2d& Vec2d::load_partial(int, const double*)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1570:19: error: ‘_mm_setzero_pd’ was not declared in this scope; did you mean ‘_mm_setzero_ps’?
+ 1570 |             xmm = _mm_setzero_pd();
+      |                   ^~~~~~~~~~~~~~
+      |                   _mm_setzero_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In member function ‘void Vec2d::store_partial(int, double*) const’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1577:13: error: ‘_mm_store_sd’ was not declared in this scope; did you mean ‘_mm_store_ss’?
+ 1577 |             _mm_store_sd(p, xmm);
+      |             ^~~~~~~~~~~~
+      |             _mm_store_ss
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In member function ‘Vec2d& Vec2d::cutoff(int)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1585:35: error: ‘_mm_castpd_ps’ was not declared in this scope; did you mean ‘_mm_cmpord_ps’?
+ 1585 |         xmm = _mm_castps_pd(Vec4f(_mm_castpd_ps(xmm)).cutoff(n*2));
+      |                                   ^~~~~~~~~~~~~
+      |                                   _mm_cmpord_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1585:15: error: ‘_mm_castps_pd’ was not declared in this scope; did you mean ‘_mm_castps_si128’?
+ 1585 |         xmm = _mm_castps_pd(Vec4f(_mm_castpd_ps(xmm)).cutoff(n*2));
+      |               ^~~~~~~~~~~~~
+      |               _mm_castps_si128
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In member function ‘const Vec2d& Vec2d::insert(uint32_t, double)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1591:22: error: ‘_mm_set_sd’ was not declared in this scope; did you mean ‘_mm_set_ss’?
+ 1591 |         __m128d v2 = _mm_set_sd(value);
+      |                      ^~~~~~~~~~
+      |                      _mm_set_ss
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1593:19: error: ‘_mm_shuffle_pd’ was not declared in this scope; did you mean ‘_mm_shuffle_ps’?
+ 1593 |             xmm = _mm_shuffle_pd(v2,xmm,2);
+      |                   ^~~~~~~~~~~~~~
+      |                   _mm_shuffle_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1596:19: error: ‘_mm_shuffle_pd’ was not declared in this scope; did you mean ‘_mm_shuffle_ps’?
+ 1596 |             xmm = _mm_shuffle_pd(xmm,v2,0);
+      |                   ^~~~~~~~~~~~~~
+      |                   _mm_shuffle_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2d operator+(const Vec2d&, const Vec2d&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1625:12: error: ‘_mm_add_pd’ was not declared in this scope; did you mean ‘_mm_add_ps’?
+ 1625 |     return _mm_add_pd(a, b);
+      |            ^~~~~~~~~~
+      |            _mm_add_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2d operator-(const Vec2d&, const Vec2d&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1657:12: error: ‘_mm_sub_pd’ was not declared in this scope; did you mean ‘_mm_sub_ps’?
+ 1657 |     return _mm_sub_pd(a, b);
+      |            ^~~~~~~~~~
+      |            _mm_sub_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2d operator-(const Vec2d&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1671:26: error: ‘_mm_castsi128_pd’ was not declared in this scope; did you mean ‘_mm_castsi128_ps’?
+ 1671 |     return _mm_xor_pd(a, _mm_castsi128_pd(_mm_setr_epi32(0,0x80000000,0,0x80000000)));
+      |                          ^~~~~~~~~~~~~~~~
+      |                          _mm_castsi128_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1671:12: error: ‘_mm_xor_pd’ was not declared in this scope; did you mean ‘_mm_xor_ps’?
+ 1671 |     return _mm_xor_pd(a, _mm_castsi128_pd(_mm_setr_epi32(0,0x80000000,0,0x80000000)));
+      |            ^~~~~~~~~~
+      |            _mm_xor_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2d operator*(const Vec2d&, const Vec2d&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1695:12: error: ‘_mm_mul_pd’ was not declared in this scope; did you mean ‘_mm_mul_ps’?
+ 1695 |     return _mm_mul_pd(a, b);
+      |            ^~~~~~~~~~
+      |            _mm_mul_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2d operator/(const Vec2d&, const Vec2d&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1714:12: error: ‘_mm_div_pd’ was not declared in this scope; did you mean ‘_mm_div_ps’?
+ 1714 |     return _mm_div_pd(a, b);
+      |            ^~~~~~~~~~
+      |            _mm_div_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2db operator==(const Vec2d&, const Vec2d&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1733:12: error: ‘_mm_cmpeq_pd’ was not declared in this scope; did you mean ‘_mm_cmpeq_ps’?
+ 1733 |     return _mm_cmpeq_pd(a, b);
+      |            ^~~~~~~~~~~~
+      |            _mm_cmpeq_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2db operator!=(const Vec2d&, const Vec2d&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1738:12: error: ‘_mm_cmpneq_pd’ was not declared in this scope; did you mean ‘_mm_cmpneq_ps’?
+ 1738 |     return _mm_cmpneq_pd(a, b);
+      |            ^~~~~~~~~~~~~
+      |            _mm_cmpneq_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2db operator<(const Vec2d&, const Vec2d&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1743:12: error: ‘_mm_cmplt_pd’ was not declared in this scope; did you mean ‘_mm_cmplt_ps’?
+ 1743 |     return _mm_cmplt_pd(a, b);
+      |            ^~~~~~~~~~~~
+      |            _mm_cmplt_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2db operator<=(const Vec2d&, const Vec2d&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1748:12: error: ‘_mm_cmple_pd’ was not declared in this scope; did you mean ‘_mm_cmple_ps’?
+ 1748 |     return _mm_cmple_pd(a, b);
+      |            ^~~~~~~~~~~~
+      |            _mm_cmple_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2d operator&(const Vec2d&, const Vec2d&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1765:12: error: ‘_mm_and_pd’ was not declared in this scope; did you mean ‘_mm_and_ps’?
+ 1765 |     return _mm_and_pd(a, b);
+      |            ^~~~~~~~~~
+      |            _mm_and_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2d operator&(const Vec2d&, const Vec2db&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1776:12: error: ‘_mm_and_pd’ was not declared in this scope; did you mean ‘_mm_and_ps’?
+ 1776 |     return _mm_and_pd(a, b);
+      |            ^~~~~~~~~~
+      |            _mm_and_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2d operator&(const Vec2db&, const Vec2d&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1779:12: error: ‘_mm_and_pd’ was not declared in this scope; did you mean ‘_mm_and_ps’?
+ 1779 |     return _mm_and_pd(a, b);
+      |            ^~~~~~~~~~
+      |            _mm_and_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2d operator|(const Vec2d&, const Vec2d&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1784:12: error: ‘_mm_or_pd’ was not declared in this scope; did you mean ‘_mm_or_ps’?
+ 1784 |     return _mm_or_pd(a, b);
+      |            ^~~~~~~~~
+      |            _mm_or_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2d operator^(const Vec2d&, const Vec2d&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1795:12: error: ‘_mm_xor_pd’ was not declared in this scope; did you mean ‘_mm_xor_ps’?
+ 1795 |     return _mm_xor_pd(a, b);
+      |            ^~~~~~~~~~
+      |            _mm_xor_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘double horizontal_add(const Vec2d&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1843:18: error: ‘_mm_castpd_ps’ was not declared in this scope; did you mean ‘_mm_cmpord_ps’?
+ 1843 |     __m128  t0 = _mm_castpd_ps(a);
+      |                  ^~~~~~~~~~~~~
+      |                  _mm_cmpord_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1844:18: error: ‘_mm_castps_pd’ was not declared in this scope; did you mean ‘_mm_castps_si128’?
+ 1844 |     __m128d t1 = _mm_castps_pd(_mm_movehl_ps(t0,t0));
+      |                  ^~~~~~~~~~~~~
+      |                  _mm_castps_si128
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1845:18: error: ‘_mm_add_sd’ was not declared in this scope; did you mean ‘_mm_add_ss’?
+ 1845 |     __m128d t2 = _mm_add_sd(a,t1);
+      |                  ^~~~~~~~~~
+      |                  _mm_add_ss
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1846:12: error: ‘_mm_cvtsd_f64’ was not declared in this scope; did you mean ‘_mm_cvtss_f32’?
+ 1846 |     return _mm_cvtsd_f64(t2);
+      |            ^~~~~~~~~~~~~
+      |            _mm_cvtss_f32
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2d max(const Vec2d&, const Vec2d&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1852:12: error: ‘_mm_max_pd’ was not declared in this scope; did you mean ‘_mm_max_ps’?
+ 1852 |     return _mm_max_pd(a,b);
+      |            ^~~~~~~~~~
+      |            _mm_max_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2d min(const Vec2d&, const Vec2d&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1857:12: error: ‘_mm_min_pd’ was not declared in this scope; did you mean ‘_mm_min_ps’?
+ 1857 |     return _mm_min_pd(a,b);
+      |            ^~~~~~~~~~
+      |            _mm_min_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2d abs(const Vec2d&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1863:20: error: ‘_mm_castsi128_pd’ was not declared in this scope; did you mean ‘_mm_castsi128_ps’?
+ 1863 |     __m128d mask = _mm_castsi128_pd(_mm_setr_epi32(-1,0x7FFFFFFF,-1,0x7FFFFFFF));
+      |                    ^~~~~~~~~~~~~~~~
+      |                    _mm_castsi128_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1864:12: error: ‘_mm_and_pd’ was not declared in this scope; did you mean ‘_mm_and_ps’?
+ 1864 |     return _mm_and_pd(a,mask);
+      |            ^~~~~~~~~~
+      |            _mm_and_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2d sqrt(const Vec2d&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1869:12: error: ‘_mm_sqrt_pd’ was not declared in this scope; did you mean ‘_mm_sqrt_ps’?
+ 1869 |     return _mm_sqrt_pd(a);
+      |            ^~~~~~~~~~~
+      |            _mm_sqrt_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2d round(const Vec2d&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1965:25: error: ‘_mm_castsi128_pd’ was not declared in this scope; did you mean ‘_mm_castsi128_ps’?
+ 1965 |     Vec2d signmask    = _mm_castsi128_pd(constant4ui<0,0x80000000,0,0x80000000>());  // -0.0
+      |                         ^~~~~~~~~~~~~~~~
+      |                         _mm_castsi128_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1967:25: error: ‘_mm_and_pd’ was not declared in this scope; did you mean ‘_mm_and_ps’?
+ 1967 |     Vec2d sign        = _mm_and_pd(a, signmask);                                    // signbit of a
+      |                         ^~~~~~~~~~
+      |                         _mm_and_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1968:25: error: ‘_mm_or_pd’ was not declared in this scope; did you mean ‘_mm_or_ps’?
+ 1968 |     Vec2d signedmagic = _mm_or_pd(magic, sign);                                     // magic number with sign of a
+      |                         ^~~~~~~~~
+      |                         _mm_or_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2d truncate(const Vec2d&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1982:19: error: ‘_mm_getcsr’ was not declared in this scope; did you mean ‘_mm_set_ss’?
+ 1982 |     uint32_t t1 = _mm_getcsr();        // MXCSR
+      |                   ^~~~~~~~~~
+      |                   _mm_set_ss
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1984:5: error: ‘_mm_setcsr’ was not declared in this scope; did you mean ‘_mm_set_ss’?
+ 1984 |     _mm_setcsr(t2);                    // change MXCSR
+      |     ^~~~~~~~~~
+      |     _mm_set_ss
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2d floor(const Vec2d&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1997:19: error: ‘_mm_getcsr’ was not declared in this scope; did you mean ‘_mm_set_ss’?
+ 1997 |     uint32_t t1 = _mm_getcsr();        // MXCSR
+      |                   ^~~~~~~~~~
+      |                   _mm_set_ss
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:1999:5: error: ‘_mm_setcsr’ was not declared in this scope; did you mean ‘_mm_set_ss’?
+ 1999 |     _mm_setcsr(t2);                    // change MXCSR
+      |     ^~~~~~~~~~
+      |     _mm_set_ss
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2d ceil(const Vec2d&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:2011:19: error: ‘_mm_getcsr’ was not declared in this scope; did you mean ‘_mm_set_ss’?
+ 2011 |     uint32_t t1 = _mm_getcsr();        // MXCSR
+      |                   ^~~~~~~~~~
+      |                   _mm_set_ss
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:2013:5: error: ‘_mm_setcsr’ was not declared in this scope; did you mean ‘_mm_set_ss’?
+ 2013 |     _mm_setcsr(t2);                    // change MXCSR
+      |     ^~~~~~~~~~
+      |     _mm_set_ss
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec4i truncate_to_int(const Vec2d&, const Vec2d&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:2022:16: error: ‘_mm_cvttpd_epi32’ was not declared in this scope; did you mean ‘_mm_cvttps_epi32’?
+ 2022 |     Vec4i t1 = _mm_cvttpd_epi32(a);
+      |                ^~~~~~~~~~~~~~~~
+      |                _mm_cvttps_epi32
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec4i round_to_int(const Vec2d&, const Vec2d&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:2031:16: error: ‘_mm_cvtpd_epi32’ was not declared in this scope; did you mean ‘_mm_cvtps_epi32’?
+ 2031 |     Vec4i t1 = _mm_cvtpd_epi32(a);
+      |                ^~~~~~~~~~~~~~~
+      |                _mm_cvtps_epi32
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec4i round_to_int(const Vec2d&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:2038:16: error: ‘_mm_cvtpd_epi32’ was not declared in this scope; did you mean ‘_mm_cvtps_epi32’?
+ 2038 |     Vec4i t1 = _mm_cvtpd_epi32(a);
+      |                ^~~~~~~~~~~~~~~
+      |                _mm_cvtps_epi32
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2q truncate_to_int64_limited(const Vec2d&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:2061:16: error: ‘_mm_cvttpd_epi32’ was not declared in this scope; did you mean ‘_mm_cvttps_epi32’?
+ 2061 |     Vec4i t1 = _mm_cvttpd_epi32(a);
+      |                ^~~~~~~~~~~~~~~~
+      |                _mm_cvttps_epi32
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2q round_to_int64_limited(const Vec2d&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:2082:16: error: ‘_mm_cvtpd_epi32’ was not declared in this scope; did you mean ‘_mm_cvtps_epi32’?
+ 2082 |     Vec4i t1 = _mm_cvtpd_epi32(a);
+      |                ^~~~~~~~~~~~~~~
+      |                _mm_cvtps_epi32
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2d to_double_limited(const Vec2q&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:2105:12: error: ‘_mm_cvtepi32_pd’ was not declared in this scope; did you mean ‘_mm_cvtepi32_ps’?
+ 2105 |     return _mm_cvtepi32_pd(compressed);
+      |            ^~~~~~~~~~~~~~~
+      |            _mm_cvtepi32_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2d to_double_low(const Vec4i&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:2111:12: error: ‘_mm_cvtepi32_pd’ was not declared in this scope; did you mean ‘_mm_cvtepi32_ps’?
+ 2111 |     return _mm_cvtepi32_pd(a);
+      |            ^~~~~~~~~~~~~~~
+      |            _mm_cvtepi32_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec4f compress(const Vec2d&, const Vec2d&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:2121:16: error: ‘_mm_cvtpd_ps’ was not declared in this scope; did you mean ‘_mm_cvtepi32_ps’?
+ 2121 |     Vec4f t1 = _mm_cvtpd_ps(low);
+      |                ^~~~~~~~~~~~
+      |                _mm_cvtepi32_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2d extend_low(const Vec4f&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:2128:12: error: ‘_mm_cvtps_pd’ was not declared in this scope; did you mean ‘_mm_cvtps_epi32’?
+ 2128 |     return _mm_cvtps_pd(a);
+      |            ^~~~~~~~~~~~
+      |            _mm_cvtps_epi32
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2d extend_high(const Vec4f&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:2133:12: error: ‘_mm_cvtps_pd’ was not declared in this scope; did you mean ‘_mm_cvtps_epi32’?
+ 2133 |     return _mm_cvtps_pd(_mm_movehl_ps(a,a));
+      |            ^~~~~~~~~~~~
+      |            _mm_cvtps_epi32
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2d mul_sub_x(const Vec2d&, const Vec2d&, const Vec2d&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:2183:30: error: ‘_mm_castsi128_pd’ was not declared in this scope; did you mean ‘_mm_castsi128_ps’?
+ 2183 |     Vec2d a_high = a & Vec2d(_mm_castsi128_pd(upper_mask));// split into high and low parts
+      |                              ^~~~~~~~~~~~~~~~
+      |                              _mm_castsi128_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2q exponent(const Vec2d&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:2201:17: error: ‘_mm_castpd_si128’ was not declared in this scope; did you mean ‘_mm_castps_si128’?
+ 2201 |     Vec2uq t1 = _mm_castpd_si128(a);   // reinterpret as 64-bit integer
+      |                 ^~~~~~~~~~~~~~~~
+      |                 _mm_castps_si128
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2d fraction(const Vec2d&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:2213:17: error: ‘_mm_castpd_si128’ was not declared in this scope; did you mean ‘_mm_castps_si128’?
+ 2213 |     Vec2uq t1 = _mm_castpd_si128(a);   // reinterpret as 64-bit integer
+      |                 ^~~~~~~~~~~~~~~~
+      |                 _mm_castps_si128
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:2215:12: error: ‘_mm_castsi128_pd’ was not declared in this scope; did you mean ‘_mm_castsi128_ps’?
+ 2215 |     return _mm_castsi128_pd(t2);
+      |            ^~~~~~~~~~~~~~~~
+      |            _mm_castsi128_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2d exp2(const Vec2q&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:2228:12: error: ‘_mm_castsi128_pd’ was not declared in this scope; did you mean ‘_mm_castsi128_ps’?
+ 2228 |     return _mm_castsi128_pd(t4);       // reinterpret as double
+      |            ^~~~~~~~~~~~~~~~
+      |            _mm_castsi128_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2db sign_bit(const Vec2d&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:2239:16: error: ‘_mm_castpd_si128’ was not declared in this scope; did you mean ‘_mm_castps_si128’?
+ 2239 |     Vec2q t1 = _mm_castpd_si128(a);    // reinterpret as 64-bit integer
+      |                ^~~~~~~~~~~~~~~~
+      |                _mm_castps_si128
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:2241:12: error: ‘_mm_castsi128_pd’ was not declared in this scope; did you mean ‘_mm_castsi128_ps’?
+ 2241 |     return _mm_castsi128_pd(t2);       // reinterpret as 64-bit Boolean
+      |            ^~~~~~~~~~~~~~~~
+      |            _mm_castsi128_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2d sign_combine(const Vec2d&, const Vec2d&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:2247:22: error: ‘_mm_castsi128_pd’ was not declared in this scope; did you mean ‘_mm_castsi128_ps’?
+ 2247 |     Vec2d signmask = _mm_castsi128_pd(constant4ui<0,0x80000000,0,0x80000000>());  // -0.0
+      |                      ^~~~~~~~~~~~~~~~
+      |                      _mm_castsi128_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2db is_finite(const Vec2d&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:2254:16: error: ‘_mm_castpd_si128’ was not declared in this scope; did you mean ‘_mm_castps_si128’?
+ 2254 |     Vec2q t1 = _mm_castpd_si128(a);    // reinterpret as integer
+      |                ^~~~~~~~~~~~~~~~
+      |                _mm_castps_si128
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2db is_inf(const Vec2d&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:2264:16: error: ‘_mm_castpd_si128’ was not declared in this scope; did you mean ‘_mm_castps_si128’?
+ 2264 |     Vec2q t1 = _mm_castpd_si128(a);    // reinterpret as integer
+      |                ^~~~~~~~~~~~~~~~
+      |                _mm_castps_si128
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2db is_nan(const Vec2d&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:2272:16: error: ‘_mm_castpd_si128’ was not declared in this scope; did you mean ‘_mm_castps_si128’?
+ 2272 |     Vec2q t1 = _mm_castpd_si128(a);    // reinterpret as integer
+      |                ^~~~~~~~~~~~~~~~
+      |                _mm_castps_si128
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2db is_subnormal(const Vec2d&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:2283:16: error: ‘_mm_castpd_si128’ was not declared in this scope; did you mean ‘_mm_castps_si128’?
+ 2283 |     Vec2q t1 = _mm_castpd_si128(a);    // reinterpret as 32-bit integer
+      |                ^~~~~~~~~~~~~~~~
+      |                _mm_castps_si128
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2db is_zero_or_subnormal(const Vec2d&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:2294:15: error: ‘_mm_castpd_si128’ was not declared in this scope; did you mean ‘_mm_castps_si128’?
+ 2294 |     Vec2q t = _mm_castpd_si128(a);     // reinterpret as 32-bit integer
+      |               ^~~~~~~~~~~~~~~~
+      |               _mm_castps_si128
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2d infinite2d()’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:2301:12: error: ‘_mm_castsi128_pd’ was not declared in this scope; did you mean ‘_mm_castsi128_ps’?
+ 2301 |     return _mm_castsi128_pd(_mm_setr_epi32(0,0x7FF00000,0,0x7FF00000));
+      |            ^~~~~~~~~~~~~~~~
+      |            _mm_castsi128_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2d nan2d(int)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:2306:12: error: ‘_mm_castsi128_pd’ was not declared in this scope; did you mean ‘_mm_castsi128_ps’?
+ 2306 |     return _mm_castsi128_pd(_mm_setr_epi32(n, 0x7FF80000, n, 0x7FF80000));
+      |            ^~~~~~~~~~~~~~~~
+      |            _mm_castsi128_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘__m128i reinterpret_i(const __m128d&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:2325:12: error: ‘_mm_castpd_si128’ was not declared in this scope; did you mean ‘_mm_castps_si128’?
+ 2325 |     return _mm_castpd_si128(x);
+      |            ^~~~~~~~~~~~~~~~
+      |            _mm_castps_si128
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘__m128 reinterpret_f(const __m128d&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:2337:12: error: ‘_mm_castpd_ps’ was not declared in this scope; did you mean ‘_mm_cmpord_ps’?
+ 2337 |     return _mm_castpd_ps(x);
+      |            ^~~~~~~~~~~~~
+      |            _mm_cmpord_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘__m128d reinterpret_d(const __m128i&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:2341:12: error: ‘_mm_castsi128_pd’ was not declared in this scope; did you mean ‘_mm_castsi128_ps’?
+ 2341 |     return _mm_castsi128_pd(x);
+      |            ^~~~~~~~~~~~~~~~
+      |            _mm_castsi128_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘__m128d reinterpret_d(const __m128&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:2345:12: error: ‘_mm_castps_pd’ was not declared in this scope; did you mean ‘_mm_castps_si128’?
+ 2345 |     return _mm_castps_pd(x);
+      |            ^~~~~~~~~~~~~
+      |            _mm_castps_si128
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2d permute2d(const Vec2d&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:2404:35: error: there are no arguments to ‘_mm_setzero_pd’ that depend on a template parameter, so a declaration of ‘_mm_setzero_pd’ must be available [-fpermissive]
+ 2404 |         if ((i0 & i1) < 0) return _mm_setzero_pd();        // zero everything
+      |                                   ^~~~~~~~~~~~~~
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:2407:30: error: there are no arguments to ‘_mm_castsi128_pd’ that depend on a template parameter, so a declaration of ‘_mm_castsi128_pd’ must be available [-fpermissive]
+ 2407 |         return  _mm_and_pd(a,_mm_castsi128_pd(mask1));     // zero with AND mask
+      |                              ^~~~~~~~~~~~~~~~
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:2410:16: error: there are no arguments to ‘_mm_shuffle_pd’ that depend on a template parameter, so a declaration of ‘_mm_shuffle_pd’ must be available [-fpermissive]
+ 2410 |         return _mm_shuffle_pd(a, a, (i0&1) | (i1&1)<<1);
+      |                ^~~~~~~~~~~~~~
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:2415:35: error: there are no arguments to ‘_mm_setzero_pd’ that depend on a template parameter, so a declaration of ‘_mm_setzero_pd’ must be available [-fpermissive]
+ 2415 |             return _mm_shuffle_pd(_mm_setzero_pd(), a, (i1 & 1) << 1);
+      |                                   ^~~~~~~~~~~~~~
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:2418:38: error: there are no arguments to ‘_mm_setzero_pd’ that depend on a template parameter, so a declaration of ‘_mm_setzero_pd’ must be available [-fpermissive]
+ 2418 |             return _mm_shuffle_pd(a, _mm_setzero_pd(), i0 & 1);
+      |                                      ^~~~~~~~~~~~~~
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2d blend2d(const Vec2d&, const Vec2d&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:2445:16: error: there are no arguments to ‘_mm_shuffle_pd’ that depend on a template parameter, so a declaration of ‘_mm_shuffle_pd’ must be available [-fpermissive]
+ 2445 |         return _mm_shuffle_pd(a, b, (i0 & 1) | (i1 & 1) << 1);
+      |                ^~~~~~~~~~~~~~
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:2448:16: error: there are no arguments to ‘_mm_shuffle_pd’ that depend on a template parameter, so a declaration of ‘_mm_shuffle_pd’ must be available [-fpermissive]
+ 2448 |         return _mm_shuffle_pd(b, a, (i0 & 1) | (i1 & 1) << 1);
+      |                ^~~~~~~~~~~~~~
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h: In function ‘Vec2d change_sign(const Vec2d&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf128.h:2458:27: error: there are no arguments to ‘_mm_castsi128_pd’ that depend on a template parameter, so a declaration of ‘_mm_castsi128_pd’ must be available [-fpermissive]
+ 2458 |     return  _mm_xor_pd(a, _mm_castsi128_pd(mask));     // flip sign bits
+      |                           ^~~~~~~~~~~~~~~~
+In file included from ../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorclass.h:53,
+                 from ../testbench/testbench1.cpp:142:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf256e.h: In constructor ‘Vec4db::Vec4db(const Vec4qb&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf256e.h:338:14: error: ‘_mm_castsi128_pd’ was not declared in this scope; did you mean ‘_mm_castsi128_ps’?
+  338 |         y0 = _mm_castsi128_pd(Vec4q(x).get_low());
+      |              ^~~~~~~~~~~~~~~~
+      |              _mm_castsi128_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf256e.h: In member function ‘Vec4db& Vec4db::operator=(const Vec4qb&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf256e.h:343:14: error: ‘_mm_castsi128_pd’ was not declared in this scope; did you mean ‘_mm_castsi128_ps’?
+  343 |         y0 = _mm_castsi128_pd(Vec4q(x).get_low());
+      |              ^~~~~~~~~~~~~~~~
+      |              _mm_castsi128_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf256e.h: In member function ‘Vec4db::operator Vec4qb() const’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf256e.h:362:22: error: ‘_mm_castpd_si128’ was not declared in this scope; did you mean ‘_mm_castps_si128’?
+  362 |         return Vec4q(_mm_castpd_si128(y0), _mm_castpd_si128(y1));
+      |                      ^~~~~~~~~~~~~~~~
+      |                      _mm_castps_si128
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf256e.h: In constructor ‘Vec4d::Vec4d(double)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf256e.h:1095:19: error: ‘_mm_set1_pd’ was not declared in this scope; did you mean ‘_mm_set1_ps’?
+ 1095 |         y1 = y0 = _mm_set1_pd(d);
+      |                   ^~~~~~~~~~~
+      |                   _mm_set1_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf256e.h: In constructor ‘Vec4d::Vec4d(double, double, double, double)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf256e.h:1099:14: error: ‘_mm_setr_pd’ was not declared in this scope; did you mean ‘_mm_setr_ps’?
+ 1099 |         y0 = _mm_setr_pd(d0, d1);
+      |              ^~~~~~~~~~~
+      |              _mm_setr_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf256e.h: In member function ‘Vec4d& Vec4d::load(const double*)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf256e.h:1119:14: error: ‘_mm_loadu_pd’ was not declared in this scope; did you mean ‘_mm_loadu_ps’?
+ 1119 |         y0 = _mm_loadu_pd(p);
+      |              ^~~~~~~~~~~~
+      |              _mm_loadu_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf256e.h: In member function ‘Vec4d& Vec4d::load_a(const double*)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf256e.h:1127:14: error: ‘_mm_load_pd’ was not declared in this scope; did you mean ‘_mm_load_sd’?
+ 1127 |         y0 = _mm_load_pd(p);
+      |              ^~~~~~~~~~~
+      |              _mm_load_sd
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf256e.h: In member function ‘void Vec4d::store(double*) const’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf256e.h:1133:9: error: ‘_mm_storeu_pd’ was not declared in this scope; did you mean ‘_mm_storeu_ps’?
+ 1133 |         _mm_storeu_pd(p,   y0);
+      |         ^~~~~~~~~~~~~
+      |         _mm_storeu_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf256e.h: In member function ‘void Vec4d::store_a(double*) const’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf256e.h:1140:9: error: ‘_mm_store_pd’ was not declared in this scope; did you mean ‘_mm_store_ps’?
+ 1140 |         _mm_store_pd(p,   y0);
+      |         ^~~~~~~~~~~~
+      |         _mm_store_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf256e.h: In member function ‘Vec4d& Vec4d::load_partial(int, const double*)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf256e.h:1146:55: error: ‘_mm_setzero_pd’ was not declared in this scope; did you mean ‘_mm_setzero_ps’?
+ 1146 |             *this = Vec4d(Vec2d().load_partial(n, p), _mm_setzero_pd());
+      |                                                       ^~~~~~~~~~~~~~
+      |                                                       _mm_setzero_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf256e.h:1152:23: error: ‘_mm_setzero_pd’ was not declared in this scope; did you mean ‘_mm_setzero_ps’?
+ 1152 |             y1 = y0 = _mm_setzero_pd();
+      |                       ^~~~~~~~~~~~~~
+      |                       _mm_setzero_ps
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf256e.h: In function ‘Vec2d select4(const Vec4d&, const Vec4d&)’:
+../../../acrc_internship/summer20/iqtree/IQ-TREE/vectorclass/vectorf256e.h:1807:12: error: there are no arguments to ‘_mm_setzero_pd’ that depend on a template parameter, so a declaration of ‘_mm_setzero_pd’ must be available [-fpermissive]
+ 1807 |     return _mm_setzero_pd();
+      |            ^~~~~~~~~~~~~~
+../testbench/testbench1.cpp: In constructor ‘TestData<T>::TestData()’:
+../testbench/testbench1.cpp:1488:28: error: ‘elementtype’ is not a member of ‘Vec16c’
+ 1488 |                 if (vtype::elementtype() > 3) {
+      |                            ^~~~~~~~~~~

@@ -1,0 +1,10 @@
+Operating system is Unknown
+
+
+max instruction set: 6
+
+g++ -Dtestcase=1  -Dvtype=Vec16c -Drtype=Vec16c -DINSTRSET=6 -Dseed=1 -march=armv8-a+fp+simd+crypto+crc -std=c++17 -O3 -fno-trapping-math -ox -I../vectorclass/ ../testbench/testbench1.cpp  -fno-asynchronous-unwind-tables -Wno-attributes 
+../testbench/testbench1.cpp: In constructor ‘TestData<T>::TestData()’:
+../testbench/testbench1.cpp:1488:28: error: ‘elementtype’ is not a member of ‘Vec16c’
+ 1488 |                 if (vtype::elementtype() > 3) {
+      |                            ^~~~~~~~~~~
