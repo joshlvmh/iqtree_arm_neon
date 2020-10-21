@@ -2,7 +2,7 @@
 
 IQ-TREE is a fast and effective stochastic algorithm to inferphylogenetic trees by maximum likelihood. It contains Intel intrinsics, and this project provides a mapping layer between those intrinsics and the underlying hardware, in order to port the software to work correctly on ARM NEON instruction set architecture.
 
-Process included modifying IQ-TREE code to coerce the compiler into compiling for SSE4.2, and extending funtionality in sse2neon.h to include all missing intrinsics.
+Process included modifying IQ-TREE code to coerce the compiler into compiling for SSE4.2, adding functionality to recognise NEON ISA, and extending funtionality in sse2neon.h to include all missing intrinsics.
 
 ## Licence
 
