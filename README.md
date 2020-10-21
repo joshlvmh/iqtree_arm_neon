@@ -22,7 +22,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
 
 [2]  J.W.  Ratcliff,  B.  Rowlett,  K.  Fast,  E.  van  Beur-den,  A.  Potylitsin,  H.  Gamaarachchi,  J.  Huang,M.   Cheng,    M.   James,    D.   Hussey,    S.   Pop,Developer   Ecosystem   Engineering,   D.   Kutenin,F.    Turban,P-H.    Hung,Y-H.    Yang    (2020)sse2neon:  A  C/C++  header  file  that  converts  In-tel SSE intrinsics to Arm/Aarch64 NEON intrinsics.https://github.com/DLTcollab/sse2neon
 
-[3]  B.   Jacob   (founder),    G.   Guennebaud   (guru),et   al.   (2020)   Eigen   is   a   C++   template   li-brary   for   linear   algebra:matrices,    vectors,numericalsolvers,andrelatedalgorithms.http://eigen.tuxfamily.org/index.php
+[3]  B.   Jacob   (founder),    G.   Guennebaud   (guru),et   al.   (2020)   Eigen   is   a   C++   template   library   for   linear   algebra: matrices,    vectors, numerical solvers,and related algorithms.http://eigen.tuxfamily.org/index.php
 
 [4]  Intel Intrinsics Guide.https://software.intel.com/sites/landingpage/IntrinsicsGuide/
 
