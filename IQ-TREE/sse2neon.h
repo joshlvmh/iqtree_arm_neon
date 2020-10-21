@@ -1,7 +1,7 @@
 #ifndef SSE2NEON_H
 #define SSE2NEON_H
 
-#if defined(__ARM_NEON) // Added by Joshua Measure-Hughes for IQ-TREE, alongside further functionality located at the end of this file.
+#if defined(__ARM_NEON) // Added by Joshua Measure-Hughes for porting IQ-TREE, alongside further functionality located at the end of this file.
 
 // This header file provides a simple API translation layer
 // between SSE intrinsics to their corresponding Arm/Aarch64 NEON versions
