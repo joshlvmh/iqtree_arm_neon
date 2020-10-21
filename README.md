@@ -10,7 +10,9 @@ Copyright (C) 2020 Joshua Measure-Hughes
 
 Written for the Advanced Computing Research Centre, University of Bristol.
 
-Licensed under the MIT License, (the “License”); you may not use this file except in compliance with the License. 
+Licensed under the MIT License, (the “License”); you may not use this file except in compliance with the License.
+
+The License applies to unique documents to this implementation, and not to those present in [1], [2] and [3]. Additional functionality in [2] has been labelled and is at the end of the document. The original Licenses for [1], [2], and [3] apply otherwise.
 
 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an “AS IS” BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 
