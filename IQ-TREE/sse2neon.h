@@ -4132,7 +4132,7 @@ FORCE_INLINE uint64_t _mm_crc32_u64(uint64_t crc, uint64_t v)
     return crc;
 }
 
-// ------------------------------------ IQ-TREE additional functionality ----------------------------------------------- //
+// ------------------------------------ IQ-TREE additional functionality by Joshua Measure-Hughes (2020) ----------------------------------------------- //
 
 /*
 FORCE_INLINE __m128d _mm_sqrt_pd(const double a)
